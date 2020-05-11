@@ -1,0 +1,58 @@
+{
+  "homepage": "http://robesrpa.github.io/biscay_plain",
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
+  "version": "1.0.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "css.gg": "^1.0.6",
+    "cssnext": "^1.8.4",
+    "gatsby": "^2.20.29",
+    "gatsby-cli": "^2.12.16",
+    "gatsby-link": "^2.3.4",
+    "gatsby-plugin-babel": "^1.0.0",
+    "gatsby-plugin-favicon": "^3.1.6",
+    "gatsby-plugin-netlify": "^2.2.3",
+    "gatsby-plugin-optimize-svgs": "^1.0.4",
+    "gatsby-plugin-page-transitions": "^1.0.8",
+    "gatsby-plugin-postcss": "^2.2.3",
+    "gatsby-plugin-react-helmet": "^3.2.4",
+    "gatsby-plugin-sass": "^2.2.3",
+    "history": "^4.10.1",
+    "jquery": "^3.5.0",
+    "node-sass": "^4.14.1",
+    "postcss-browser-reporter": "^0.5.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-reporter": "^6.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^5.2.1",
+    "react-router-dom": "^4.3.1",
+    "react-router-scroll": "^0.4.4"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "rm -rf .cache && rm -rf public && gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rmcache": "rm -rf node_modules/gh-pages/.cache",
+    "predeploy": "npm run rmcache & npm run build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "devDependencies": {
+    "dropcss": "^0.3.2",
+    "gh-pages": "^2.1.1",
+    "prettier": "^1.19.1",
+    "webpack": "^4.43.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  }
+}
