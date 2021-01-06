@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "css.gg": "^1.0.6",
     "cssnext": "^1.8.4",
     "gatsby": "^2.20.29",
