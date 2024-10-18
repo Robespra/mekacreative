@@ -6,6 +6,24 @@ import Footer from '../components/footer'
 import Form from '../components/form'
 import FeatherIcon from '../components/FeatherIcon'
 import Fade from 'react-reveal/Fade'
+import MekaLogo from '../images/mekacreative_logo.svg';
+import wireframeshighfi from '../images/wireframes_high_fi.svg';
+import landingAi from '../images/landing_ai.svg';
+import bgTriangle from '../images/bg_triangle.svg';
+import landingpersoradar from '../images/landing_perso_radar.svg';
+import landingpersoprogress from '../images/landing_perso_progress.svg';
+import bgsquareround from '../images/bg_square_round.svg';
+import patternbluebg from '../images/pattern_blue_bg.svg';
+import bgtriangleround from '../images/bg_triangle_round.svg';
+import trowbpic from '../images/trowb_pic.png';
+import patternpinkbgdetail1 from '../images/pattern_pink_bg_detail1.svg';
+import landingillustrguideparadoxe from '../images/landing_illustr_guide_paradoxe.svg';
+import mekaprosample from '../images/meka_pro_sample.png';
+import landingillustrguideempathy from '../images/landing_illustr_guide_empathy.svg';
+import landingillustrguidesolitude from '../images/landing_illustr_guide_solitude.svg';
+import socialtwitter from '../images/social_twitter.svg';
+import sociallinkedin from '../images/social_linkedin.svg';
+
 let pathPrefix = `/`
 export default () => (
 <PageTransition>
@@ -20,7 +38,7 @@ export default () => (
                 rel="canonical"
                 >
                 <div className="icon-svg svgicon-meka_logo_app">
-                    <img src={require('../images/mekacreative_logo.svg')}/>
+                <img className="" src={MekaLogo} alt="Meka Creative Logo" />
                 </div>
                 </a>
             </div>
@@ -71,7 +89,7 @@ export default () => (
                 </div>
             </div>
             <div className="column small-12 medium-5 hero-img">
-                <img src={require('../images/wireframes_high_fi.svg')}/>
+                <img className="" src={wireframeshighfi} alt="Meka Creative Logo" />
             </div>
         </div>
         <div className="row align-bottom text-center bottom_hero">
@@ -164,7 +182,7 @@ export default () => (
                 <Fade left>
                     <div className="card-section">
                         <div className="icon-svg landing_ai">
-                            <img src={require('../images/landing_ai.svg')}/>
+                            <img className="" src={landingAi} alt="Meka Creative Logo" />
                         </div>
                         <h3 className="red_h">Human Driven Artificial Intelligence</h3>
                         <p>
@@ -176,13 +194,13 @@ export default () => (
                 </Fade>
                 </div>
                 <div className="icon-svg bg_triangle1">
-                    <img src={require('../images/bg_triangle.svg')}/>
+                    <img className="" src={bgTriangle} alt="Meka Creative Logo" />
                 </div>
                 <Fade right>
                     <div className="column align-self-bottom card margin20_top landing_box_shadow">
                     <div className="card-section">
                         <div className="icon-svg landing_perso_radar">
-                            <img src={require('../images/landing_perso_radar.svg')}/>
+                            <img className="" src={landingpersoradar} alt="Meka Creative Logo" />
                         </div>
                         <h3 className="red_h">Creative Personality Radar</h3>
                         <p>
@@ -199,7 +217,7 @@ export default () => (
                     >
                     <div className="card-section">
                         <div className="icon-svg landing_perso_progress">
-                            <img src={require('../images/landing_perso_progress.svg')}/>
+                            <img className="" src={landingpersoprogress} alt="Meka Creative Logo" />
                         </div>
                         <h3 className="red_h">Hiring campaigns</h3>
                         <p>
@@ -209,17 +227,17 @@ export default () => (
                     </div>
                 </Fade>
                 <div className="icon-svg bg_triangle_round">
-                    <img src={require('../images/bg_triangle_round.svg')}/>
+                    <img className="" src={bgtriangleround} alt="Meka Creative Logo" />
                 </div>
             </div>
         </div>
     </div>
     <div className="icon-svg bg_square_round1">
-        <img src={require('../images/bg_square_round.svg')}/>
+        <img className="" src={bgsquareround} alt="Meka Creative Logo" />
     </div>
     <div className="row align-center">
         <div className="icon-svg pattern_blue_bg">
-            <img src={require('../images/pattern_blue_bg.svg')}/>
+            <img className="" src={patternbluebg} alt="Meka Creative Logo" />
         </div>
         <div className="column small-11 medium-12 padding10_bottom">
             <div className="padding10_both">
@@ -229,7 +247,7 @@ export default () => (
                 </h3>
                 <div className="row align-right ">
                     <div className="small-1 columns ">
-                        <img src={require('../images/trowb_pic.png')}/>
+                        <img className="" src={trowbpic} alt="Meka Creative Logo" />
                     </div>
                     <div className="small-5 columns ">
                         <h5>Tacy Trowbridge (@tacytrow)</h5>
@@ -243,7 +261,7 @@ export default () => (
                     <div className=" columns align-center">
                         <div className="card-section relative">
                             <div className="icon-svg pattern_pink_bg_detail1">
-                                <img src={require('../images/pattern_pink_bg_detail1.svg')}/>
+                                <img className="" src={patternpinkbgdetail1} alt="Meka Creative Logo" />
                             </div>
                             <h2>86%</h2>
                         </div>
@@ -257,7 +275,7 @@ export default () => (
                     <div className="columns align-center">
                         <div className="card-section relative">
                             <div className="icon-svg pattern_pink_bg_detail1">
-                                <img src={require('../images/pattern_pink_bg_detail1.svg')}/>
+                                <img className="" src={patternpinkbgdetail1} alt="Meka Creative Logo" />
                             </div>
                             <h2>94%</h2>
                         </div>
@@ -270,7 +288,7 @@ export default () => (
                     <div className=" columns align-center">
                         <div className="card-section relative">
                             <div className="icon-svg pattern_pink_bg_detail1">
-                                <img src={require('../images/pattern_pink_bg_detail1.svg')}/>
+                                <img className="" src={patternpinkbgdetail1} alt="Meka Creative Logo" />
                             </div>
                             <h2>52%</h2>
                         </div>
@@ -284,7 +302,7 @@ export default () => (
                     <div className="columns align-center">
                         <div className="card-section relative">
                             <div className="icon-svg pattern_pink_bg_detail1">
-                                <img src={require('../images/pattern_pink_bg_detail1.svg')}/>
+                                <img className="" src={patternpinkbgdetail1} alt="Meka Creative Logo" />
                             </div>
                             <h2>8/10</h2>
                         </div>
@@ -308,10 +326,7 @@ export default () => (
             data-offset={25}
             className="icon-svg meka_pro_labtop notViewed animBlock"
             >
-            <img
-            alt="about meka creative pro dashboard"
-            src={require('../images/meka_pro_sample.png')}
-            />
+                <img className="" src={mekaprosample} alt="Meka Creative Logo" />
             </div>
         </div>
         <div className="column small-12 medium-7">
@@ -425,7 +440,7 @@ export default () => (
         </div>
     </div>
     <div className="icon-svg bg_triangle2">
-        <FeatherIcon name="bg_triangle"/> 
+        <FeatherIcon name="bg_triangle"/>
     </div>
     <div className="row expanded align-center padding10_both">
         <div className="column small-12 text-center">
@@ -438,10 +453,8 @@ export default () => (
             >
             <div className="card-image">
                 <span className="label alert card-tag">#theory</span>
-                <img
-                alt="about meka creative blog creativity paradoxes"
-                src={require('../images/landing_illustr_guide_paradoxe.svg')}
-                />
+                <img className="" src={landingillustrguideparadoxe} alt="Meka Creative Logo" />
+
             </div>
             <div className="card-section">
                 <h3 className="article-title">The Five Paradoxes of Creativity</h3>
@@ -462,14 +475,12 @@ export default () => (
             >
             <div className="card-image">
                 <span className="label alert card-tag">#theory</span>
-                <img
-                alt="about meka creative blog creativity empathy"
-                src={require('../images/landing_illustr_guide_empathy.svg')}
-                />
+                <img className="" src={landingillustrguideempathy} alt="Meka Creative Logo" />
+
             </div>
             <div className="card-section">
                 <h3 className="article-title">Empathy and creativity</h3>
-        
+
                 <p className="article-summary">
                 The basis of human links and of artistic communication.
                 </p>
@@ -486,10 +497,8 @@ export default () => (
             >
             <div className="card-image">
             <span className="label alert card-tag">#theory</span>
-            <img
-            alt="about meka creative blog creativity solitude"
-            src={require('../images/landing_illustr_guide_solitude.svg')}
-            />
+            <img className="" src={landingillustrguidesolitude} alt="Meka Creative Logo" />
+
             </div>
             <div className="card-section">
             <h3 className="article-title">Can solitude stimulate creativity?</h3>
@@ -517,12 +526,12 @@ export default () => (
                     <div className="row align-center padding5_both">
                     <div className="small-12 medium-6">
                     <div className="icon-svg social_twitter">
-                        <img src={require('../images/social_twitter.svg')}/>
+                        <img className="icon-svg social_twitter" src={socialtwitter} alt="Meka Creative Logo" />
                     </div>
                     </div>
                     <div className="small-12 medium-6">
                     <div className="icon-svg social_linkedin">
-                        <img className="icon-svg social_linkedin" src={require('../images/social_linkedin.svg')}/>
+                        <img className="" src={sociallinkedin} alt="Meka Creative Logo" />
                     </div>
                     </div>
                     </div>
@@ -563,7 +572,7 @@ export default () => (
             <div className="small-8 columns">
                 <div className="logo hide-for-small-only">
                 <div className="icon-svg svgicon-meka_logo_app">
-                <FeatherIcon name="svgicon-meka_logo_app"/> 
+                <FeatherIcon name="svgicon-meka_logo_app"/>
                 </div>
                 </div>
                 <p className="footer-links">
@@ -618,7 +627,7 @@ export default () => (
             <div className="small-4 columns">
                 <div className="logo_footer">
         <div className="icon-svg svgicon-meka_logo_app">
-            <img src={require('../images/mekacreative_logo.svg')}/>
+            <img className="" src={MekaLogo} alt="Meka Creative Logo" />
         </div>
         </div>
             </div>
@@ -627,4 +636,4 @@ export default () => (
 
 </div>
 </PageTransition>
-) 
+)

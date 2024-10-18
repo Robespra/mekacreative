@@ -1,14 +1,17 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Form from '../components/form'
+import MekaLogo from '../images/mekacreative_logo.svg';
+
 
 export default () => (
-<footer>	
+<footer>
 	<div className="row align-left mtxl mbl">
 			<div className="small-11 column">
-			<Link to="/"><img src={require('../images/mekacreative_logo.svg')} alt="biscay plain logo"/></Link>
+			<Link to="/">
+			<img className="" src={MekaLogo} alt="Meka Creative Logo" /></Link>
 			</div>
-			
+
 					<div className="small-11 column ptm">
 					<h2>Monthly picks for people interested in creativity</h2>
 					</div>
@@ -24,7 +27,7 @@ export default () => (
 			<small><Link className="menu__item" to="/legal/"><span className="menu__item-name text-align-center">Privacy policy</span></Link></small>
 		</div>
 	</div>
-	
+
 </footer>
-    
+
 )

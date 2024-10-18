@@ -1,32 +1,140 @@
 {
   "stages": {
     "develop": {
-      "plugins": [],
-      "presets": [],
+      "plugins": [
+        {
+          "name": "@sigmacomputing/babel-plugin-lodash",
+          "options": {}
+        },
+        {
+          "name": "/Users/UXPAGES/Apps/mekacreative/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/UXPAGES/Apps/mekacreative/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/UXPAGES/Apps/mekacreative/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        }
+      ],
+      "presets": [
+        {
+          "name": "/Users/UXPAGES/Apps/mekacreative/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
+          }
+        }
+      ],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
       }
     },
     "develop-html": {
-      "plugins": [],
-      "presets": [],
+      "plugins": [
+        {
+          "name": "@sigmacomputing/babel-plugin-lodash",
+          "options": {}
+        },
+        {
+          "name": "/Users/UXPAGES/Apps/mekacreative/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/UXPAGES/Apps/mekacreative/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/UXPAGES/Apps/mekacreative/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        }
+      ],
+      "presets": [
+        {
+          "name": "/Users/UXPAGES/Apps/mekacreative/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
+          }
+        }
+      ],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
       }
     },
     "build-html": {
-      "plugins": [],
-      "presets": [],
+      "plugins": [
+        {
+          "name": "@sigmacomputing/babel-plugin-lodash",
+          "options": {}
+        },
+        {
+          "name": "/Users/UXPAGES/Apps/mekacreative/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/UXPAGES/Apps/mekacreative/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/UXPAGES/Apps/mekacreative/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        }
+      ],
+      "presets": [
+        {
+          "name": "/Users/UXPAGES/Apps/mekacreative/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
+          }
+        }
+      ],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
       }
     },
     "build-javascript": {
-      "plugins": [],
-      "presets": [],
+      "plugins": [
+        {
+          "name": "@sigmacomputing/babel-plugin-lodash",
+          "options": {}
+        },
+        {
+          "name": "/Users/UXPAGES/Apps/mekacreative/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/UXPAGES/Apps/mekacreative/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/UXPAGES/Apps/mekacreative/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        }
+      ],
+      "presets": [
+        {
+          "name": "/Users/UXPAGES/Apps/mekacreative/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
+          }
+        }
+      ],
       "options": {
         "cacheDirectory": true,
         "sourceType": "unambiguous"
@@ -34,7 +142,7 @@
     }
   },
   "browserslist": [
-    ">0.25%",
-    "not dead"
+    ">0.25% and supports es6-module",
+    "not dead and supports es6-module"
   ]
 }

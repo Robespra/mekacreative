@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import icon32 from '../static/favicon-32x32.png'
+
 
 export default class HTML extends React.Component {
   render() {
@@ -37,13 +37,13 @@ export default class HTML extends React.Component {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-              
+
                 gtag('config', 'UA-31626671-1');
                   `,
             }}
           />
-          
-         
+
+
 
 
 

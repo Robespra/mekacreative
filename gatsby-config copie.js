@@ -12,7 +12,6 @@ module.exports = {
     'gatsby-plugin-optimize-svgs',
     'gatsby-plugin-page-transitions',
     `gatsby-plugin-modal-routing`,
-    `react-reveal`,
     {
     // Standard plugin with options example
     resolve: 'gatsby-plugin-babel',
@@ -20,6 +19,6 @@ module.exports = {
       plugins: ['transform-react-jsx'],
       ignore: ['foo.js', 'bar/**/*.js'],
     },
-    }, 
+    },
   ],
 }

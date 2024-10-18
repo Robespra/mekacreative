@@ -5,7 +5,6 @@ import PageTransition from 'gatsby-plugin-page-transitions'
 import Footer from '../components/footer'
 import Form from '../components/form'
 import FeatherIcon from '../components/FeatherIcon'
-import Fade from 'react-reveal/Fade'
 let pathPrefix = `/`
 export default () => (
 <PageTransition>
@@ -425,7 +424,7 @@ export default () => (
         </div>
     </div>
     <div className="icon-svg bg_triangle2">
-        <FeatherIcon name="bg_triangle"/> 
+        <FeatherIcon name="bg_triangle"/>
     </div>
     <div className="row expanded align-center padding10_both">
         <div className="column small-12 text-center">
@@ -469,7 +468,7 @@ export default () => (
             </div>
             <div className="card-section">
                 <h3 className="article-title">Empathy and creativity</h3>
-        
+
                 <p className="article-summary">
                 The basis of human links and of artistic communication.
                 </p>
@@ -563,7 +562,7 @@ export default () => (
             <div className="small-8 columns">
                 <div className="logo hide-for-small-only">
                 <div className="icon-svg svgicon-meka_logo_app">
-                <FeatherIcon name="svgicon-meka_logo_app"/> 
+                <FeatherIcon name="svgicon-meka_logo_app"/>
                 </div>
                 </div>
                 <p className="footer-links">
@@ -627,4 +626,4 @@ export default () => (
 
 </div>
 </PageTransition>
-) 
+)

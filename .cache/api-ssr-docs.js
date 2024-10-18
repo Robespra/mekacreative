@@ -9,6 +9,7 @@
  * rendering.
  * @param {object} $0
  * @param {string} $0.pathname The pathname of the page currently being rendered.
+ * @param {ReactNode} $0.bodyComponent The React element to be rendered as the page body
  * @param {function} $0.replaceBodyHTMLString Call this with the HTML string
  * you render. **WARNING** if multiple plugins implement this API it's the
  * last plugin that "wins". TODO implement an automated warning against this.
@@ -28,6 +29,7 @@
  * @param {function} $0.setBodyProps Takes an object of data which
  * is merged with other body props and passed to `html.js` as `bodyProps`.
  * @param {pluginOptions} pluginOptions
+ * @returns {void | Promise<void>}
  * @example
  * // From gatsby-plugin-glamor
  * const { renderToString } = require("react-dom/server")
@@ -79,23 +81,29 @@ exports.replaceRenderer = true
  * is merged with other body props and passed to `html.js` as `bodyProps`.
  * @param {pluginOptions} pluginOptions
  * @example
- * const { Helmet } = require("react-helmet")
+ * // Import React so that you can use JSX in HeadComponents
+ * const React = require("react")
  *
- * exports.onRenderBody = (
- *   { setHeadComponents, setHtmlAttributes, setBodyAttributes },
- *   pluginOptions
- * ) => {
- *   const helmet = Helmet.renderStatic()
- *   setHtmlAttributes(helmet.htmlAttributes.toComponent())
- *   setBodyAttributes(helmet.bodyAttributes.toComponent())
- *   setHeadComponents([
- *     helmet.title.toComponent(),
- *     helmet.link.toComponent(),
- *     helmet.meta.toComponent(),
- *     helmet.noscript.toComponent(),
- *     helmet.script.toComponent(),
- *     helmet.style.toComponent(),
- *   ])
+ * const HtmlAttributes = {
+ *   lang: "en"
+ * }
+ *
+ * const HeadComponents = [
+ *   <script key="my-script" src="https://gatsby.dev/my-script" />
+ * ]
+ *
+ * const BodyAttributes = {
+ *   "data-theme": "dark"
+ * }
+ *
+ * exports.onRenderBody = ({
+ *   setHeadComponents,
+ *   setHtmlAttributes,
+ *   setBodyAttributes
+ * }, pluginOptions) => {
+ *   setHtmlAttributes(HtmlAttributes)
+ *   setHeadComponents(HeadComponents)
+ *   setBodyAttributes(BodyAttributes)
  * }
  */
 exports.onRenderBody = true
@@ -143,7 +151,7 @@ exports.onPreRenderHTML = true
  * Allow a plugin to wrap the page element.
  *
  * This is useful for setting wrapper components around pages that won't get
- * unmounted on page changes. For setting Provider components, use [wrapRootElement](#wrapRootElement).
+ * unmounted on page changes. For setting context providers, use [wrapRootElement](#wrapRootElement).
  *
  * _Note:_
  * There is an equivalent hook in Gatsby's [Browser API](/docs/browser-apis/#wrapPageElement).
@@ -169,7 +177,7 @@ exports.wrapPageElement = true
 /**
  * Allow a plugin to wrap the root element.
  *
- * This is useful to set up any Provider components that will wrap your application.
+ * This is useful to set up any context providers that will wrap your application.
  * For setting persistent UI elements around pages use [wrapPageElement](#wrapPageElement).
  *
  * _Note:_
@@ -177,6 +185,7 @@ exports.wrapPageElement = true
  * It is recommended to use both APIs together.
  * For example usage, check out [Using redux](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-redux).
  * @param {object} $0
+ * @param {string} $0.pathname The pathname of the page currently being rendered.
  * @param {ReactNode} $0.element The "Root" React Element built by Gatsby.
  * @param {pluginOptions} pluginOptions
  * @returns {ReactNode} Wrapped element
